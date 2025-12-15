@@ -1,13 +1,14 @@
-﻿# EmoAid
+﻿# ElkollegePsychologistBot
 
-#### Ты думал тут что-то будет?
+#### Telegram-бот для оказания психологической помощи
 
 ---
 
 ## Оглавление
 
 - [Контакты](#контакты)
-    - [Связь с разработчиками](#связь-с-разработчиками)
+    - [Связь с разработчиком](#связь-с-разработчиком)
+    - [Прочие ссылки](#прочие-ссылки)
 - [Сборка и запуск](#сборка-и-запуск)
     - [Необходимые компоненты](#необходимые-компоненты)
     - [Первоначальная настройка](#первоначальная-настройка)
@@ -19,11 +20,14 @@
 
 ## Контакты
 
-#### Связь с разработчиками
+#### Связь с разработчиком
 
-- [Telegram diquoks](https://t.me/diquoks)
-- [Почта diquoks](mailto:diquoks@yandex.ru)
-- [Telegram ldfxxx404](https://t.me/qhxnxmxnxn)
+- [Telegram для связи](https://t.me/diquoks)
+- [Почта для связи](mailto:diquoks@yandex.ru)
+
+#### Прочие ссылки
+
+- [Telegram-канал с новостями](https://t.me/diquoks_channel)
 
 ---
 
@@ -40,7 +44,7 @@
 ##### Клонируйте репозиторий git
 
 ```bash
-git clone https://github.com/ldfxxx404/EmoAid.git
+git clone https://github.com/elkollege/ElkollegePsychologistBot.git
 ```
 
 ##### Перейдите в корневую директорию
@@ -61,7 +65,7 @@ pip install -r requirements.txt
 cd src ; python main.py
 ```
 
-##### Заполните `EmoAid/src/config.ini` [следуя инструкции](#configini)
+##### Заполните `ElkollegePsychologistBot/src/config.ini` [следуя инструкции](#configini)
 
 ##### Используйте руководство для [Docker](#docker)
 
@@ -85,11 +89,11 @@ cd src ; python main.py
 ##### Создайте образ
 
 ```bash
-docker build -t emo_aid .
+docker build -t elkollege_psychologist_bot .
 ```
 
 ##### Запустите контейнер
 
 ```bash
-docker run -it -d --name EmoAid emo_aid
+docker run -it -d --name ElkollegePsychologistBot elkollege_psychologist_bot
 ```
