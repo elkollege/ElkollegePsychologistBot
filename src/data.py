@@ -53,12 +53,6 @@ class StringsProvider(pyquoks.data.StringsProvider):
                 """,
             )
 
-    _OBJECTS = {
-        "alert": AlertStrings,
-        "button": ButtonStrings,
-        "menu": MenuStrings,
-    }
-
     alert: AlertStrings
     button: ButtonStrings
     menu: MenuStrings
@@ -111,10 +105,6 @@ class ConfigManager(pyquoks.data.ConfigManager):
         psychologists_chat_id: int
         psychologists_list: list
         skip_updates: bool
-
-    _OBJECTS = {
-        "settings": SettingsConfig,
-    }
 
     settings: SettingsConfig
 
