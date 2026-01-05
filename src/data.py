@@ -9,6 +9,10 @@ import pyquoks
 
 # region Providers
 
+class EnvironmentProvider(pyquoks.data.EnvironmentProvider):
+    TELEGRAM_BOT_TOKEN: str
+
+
 class StringsProvider(pyquoks.data.StringsProvider):
     class AlertStrings(pyquoks.data.StringsProvider.Strings):
         @property
@@ -92,7 +96,6 @@ class ConfigManager(pyquoks.data.ConfigManager):
 
         _VALUES = {
             "admins_list": list,
-            "bot_token": str,
             "file_logging": bool,
             "psychologists_chat_id": int,
             "psychologists_list": list,
@@ -100,7 +103,6 @@ class ConfigManager(pyquoks.data.ConfigManager):
         }
 
         admins_list: list
-        bot_token: str
         file_logging: bool
         psychologists_chat_id: int
         psychologists_list: list
